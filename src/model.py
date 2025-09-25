@@ -1,5 +1,7 @@
-from src.utils import *
-from src.data_loader import load_data
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
 
-def model():
+def modelLinear():
     model = LinearRegression()
+    scaler = StandardScaler()
+    return model, scaler
